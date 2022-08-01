@@ -1,0 +1,81 @@
+.headContainer {
+  display: flex;
+  /* border: solid red 2px; */
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.rightHeadContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* border: solid green 2px; */
+  width: 25%;
+  padding-right: 2%;
+  height: 50%;
+}
+.leftHeadContainer {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 85%;
+  /* border: solid black 2px; */
+  padding-left: 2%;
+}
+.rightMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: solid purple 2px; */
+  width: 25%;
+}
+.rightLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black 2px;
+  width: 25%;
+  height: 65%;
+}
+.leftPhoto {
+  background-image: url(../Pictures/p9.jpeg);
+  background-size: cover;
+  /* border: solid red 2px; */
+  height: auto;
+  width: 15%;
+  height: 90%;
+  border-radius: 50%;
+}
+.leftText {
+  /* border: solid red 2px; */
+  padding-left: 5%;
+}
+.resizeableNav {
+  display: none;
+}
+.mainNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* border: solid green 2px; */
+  width: 100%;
+  padding-right: 2%;
+  height: 100%;
+}
+@media screen and (max-width: 700px) {
+  .resizeableNav {
+    display: inline-block;
+  }
+  .mainNav {
+    display: none;
+  }
+  .leftPhoto {
+    width: 30%;
+    margin-left: 5%;
+  }
+  .leftHeadContainer {
+    width: 50%;
+  }
+}
