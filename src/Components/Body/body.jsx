@@ -21,6 +21,30 @@ export default function Body() {
           </div>
         </div>
       </div>
+
+      <div className={style.popupContainer}>
+        <div className={style.popupOneContainer}>
+          <div className={style.popupOne}></div>
+          <div className={style.popupOneText}>
+            Exploring abandoned meatworks factory.
+            <div className={style.popupHiddenText}> further testing </div>
+          </div>
+        </div>
+        <div className={style.popupOneContainer}>
+          <div className={style.popupTwo}></div>
+          <div className={style.popupOneText}>
+            Deep in the bush somewhere in rural Gisborne.
+            <div className={style.popupHiddenText}> further testing </div>
+          </div>
+        </div>
+        <div className={style.popupOneContainer}>
+          <div className={style.popupThree}></div>
+          <div className={style.popupOneText}>
+            Another from abandoned meatworks factory.
+            <div className={style.popupHiddenText}> further testing </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

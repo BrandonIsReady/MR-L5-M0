@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  transform: scaleX(-1);
   /* border: solid blue 2px; */
   height: 550px;
   width: 100%;
@@ -12,6 +13,7 @@
   display: flex;
   flex-direction: column;
   /* border: solid red 2px; */
+  transform: scaleX(-1);
   height: 100%;
 }
 .bodyText {
@@ -46,4 +48,85 @@
   font-size: 20px;
   background-color: black;
   color: white;
+}
+.popupContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border: solid pink 2px; */
+  padding: 5% 0%;
+  height: 500px;
+}
+.popupOneContainer {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.popupOne {
+  background-image: url(../Pictures/p2.jpeg);
+  background-size: cover;
+  background-position: center;
+  /* border: solid red 2px; */
+  z-index: -1;
+  height: 95%;
+}
+.popupTwo {
+  background-image: url(../Pictures/p10.jpeg);
+  background-size: cover;
+  background-position: center;
+  /* border: solid green 2px; */
+  z-index: -1;
+  height: 95%;
+}
+.popupThree {
+  background-image: url(../Pictures/p5.jpeg);
+  background-size: cover;
+  background-position: center;
+  /* border: solid black 2px; */
+  z-index: -1;
+  height: 95%;
+}
+.popupOneText {
+  display: flex;
+  flex-direction: column;
+  /* border: solid red 5px; */
+  text-align: center;
+  background-color: black;
+  color: whitesmoke;
+  height: 5%;
+}
+.popupOne,
+.popupTwo,
+.popupThree,
+.popupOneText,
+.popupTwoText,
+.popupThreeText {
+  transition: all ease-in-out 1.5s;
+}
+
+.popupOneContainer:hover .popupOne,
+.popupOneContainer:hover .popupTwo,
+.popupOneContainer:hover .popupThree {
+  height: 25%;
+  transition: all ease-in-out 2s;
+}
+.popupOneContainer:hover .popupOneText,
+.popupOneContainer:hover .popupTwoText,
+.popupOneContainer:hover .popupThreeText {
+  transition: all ease-in-out 2s;
+  height: 75%;
+  opacity: 0.8;
+}
+
+.popupHiddenText {
+  display: none;
+}
+.popupOneContainer:hover .popupHiddenText {
+  display: contents;
+}
+
+@media screen and (max-width: 700px) {
+  .bodyBackground {
+    border: solid red 2px;
+  }
 }
