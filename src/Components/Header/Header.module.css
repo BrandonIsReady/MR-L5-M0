@@ -37,7 +37,11 @@
   border: solid black 2px;
   width: 25%;
   height: 65%;
+  cursor: pointer;
 }
+/* .rightLogin:hover {
+  border: solid red 2px;
+} */
 .leftPhoto {
   background-image: url(../Pictures/p9.jpeg);
   background-size: cover;

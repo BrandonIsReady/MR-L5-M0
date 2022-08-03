@@ -48,6 +48,13 @@
   font-size: 20px;
   background-color: black;
   color: white;
+  transition: all 0.6s;
+}
+.bodySearchBar button[type="submit"]:hover {
+  /* border: solid red 2px; */
+  padding: 35px;
+  transition: all 0.6s;
+  cursor: pointer;
 }
 .popupContainer {
   display: flex;
@@ -101,19 +108,19 @@
 .popupOneText,
 .popupTwoText,
 .popupThreeText {
-  transition: all ease-in-out 1.5s;
+  transition: all ease-in-out 1.2s;
 }
 
 .popupOneContainer:hover .popupOne,
 .popupOneContainer:hover .popupTwo,
 .popupOneContainer:hover .popupThree {
   height: 25%;
-  transition: all ease-in-out 2s;
+  transition: all ease-in-out 1.5s;
 }
 .popupOneContainer:hover .popupOneText,
 .popupOneContainer:hover .popupTwoText,
 .popupOneContainer:hover .popupThreeText {
-  transition: all ease-in-out 2s;
+  transition: all ease-in-out 1.5s;
   height: 75%;
   opacity: 0.8;
 }
@@ -123,6 +130,10 @@
 }
 .popupOneContainer:hover .popupHiddenText {
   display: contents;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 @media screen and (max-width: 700px) {
