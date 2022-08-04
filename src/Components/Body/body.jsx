@@ -14,11 +14,7 @@ export default function Body() {
 
           <div className={style.bodySearchBar}>
             <form>
-              <input
-                type="text"
-                placeholder="Search..."
-                className={style.bodySearch}
-              />
+              <input type="text" className={style.bodySearch} />
               <button type="submit"> Search </button>
             </form>
           </div>

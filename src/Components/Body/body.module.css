@@ -27,6 +27,7 @@
   padding-top: 2%;
   font-size: 70px;
   height: 70%;
+  text-shadow: 2px 2px black;
 }
 .bodySearchBar {
   display: flex;
@@ -75,7 +76,7 @@
   background-position: center;
   /* border: solid red 2px; */
   z-index: -1;
-  height: 95%;
+  height: 80%;
 }
 .popupTwo {
   background-image: url(../Pictures/p10.jpeg);
@@ -83,7 +84,7 @@
   background-position: center;
   /* border: solid green 2px; */
   z-index: -1;
-  height: 95%;
+  height: 80%;
 }
 .popupThree {
   background-image: url(../Pictures/p5.jpeg);
@@ -91,16 +92,18 @@
   background-position: center;
   /* border: solid black 2px; */
   z-index: -1;
-  height: 95%;
+  height: 80%;
 }
 .popupOneText {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /* border: solid red 5px; */
   text-align: center;
   background-color: black;
   color: whitesmoke;
-  height: 5%;
+  height: 20%;
+  font-size: 23px;
 }
 .popupOne,
 .popupTwo,
@@ -123,6 +126,7 @@
   transition: all ease-in-out 1.5s;
   height: 75%;
   opacity: 0.8;
+  position: relative;
 }
 
 .popupHiddenText {
@@ -134,6 +138,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 700px) {
