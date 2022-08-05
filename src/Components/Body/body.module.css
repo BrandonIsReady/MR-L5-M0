@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-position-y: 50%;
   transform: scaleX(-1);
   /* border: solid blue 2px; */
   height: 550px;
@@ -81,7 +82,7 @@
 .popupTwo {
   background-image: url(../Pictures/p10.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position-y: 25%;
   /* border: solid green 2px; */
   z-index: -1;
   height: 80%;
@@ -89,7 +90,7 @@
 .popupThree {
   background-image: url(../Pictures/p5.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position-y: 30%;
   /* border: solid black 2px; */
   z-index: -1;
   height: 80%;
@@ -143,6 +144,39 @@
 
 @media screen and (max-width: 700px) {
   .bodyBackground {
-    border: solid red 2px;
+    /* border: solid red 2px; */
+    height: 300px;
+  }
+  .bodySearchBar input[type="text"] {
+    width: 93%;
+    padding: 3%;
+    /* border: solid blue 2px; */
+  }
+  .bodyText {
+    font-size: 25px;
+  }
+  .popupContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid blue 2px; */
+    height: 1200px;
+  }
+  .popupOneContainer {
+    /* border: solid red 2px; */
+    width: 80%;
+    height: 400px;
+    margin-top: 5%;
+  }
+  .bodySearchBar button[type="submit"] {
+    width: 70%;
+    /* border: solid red 2px; */
+    padding: 3%;
+    transition: none;
+    justify-content: center;
+    margin-left: 15%;
+  }
+  .popupOneContainer:hover .popupHiddenText {
+    font-size: 17px;
   }
 }
